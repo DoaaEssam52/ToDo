@@ -1,0 +1,6 @@
+body{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Images/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 580px;
+}

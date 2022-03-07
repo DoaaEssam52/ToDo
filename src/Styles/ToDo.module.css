@@ -1,0 +1,32 @@
+.ToDo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: rgb(16, 62, 75);
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.ToDo__notcomplete,.ToDo__complete {
+  font-size: 20px;
+  position: relative;
+  max-width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ToDo__complete::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 2px;
+  right: 2px;
+  height: 2px;
+  background-color: rgb(88, 3, 3);
+  transform: translateY(50%);
+}
+.ToDo__Icon {
+  padding: 0 5px;
+  font-size: 18px;
+}

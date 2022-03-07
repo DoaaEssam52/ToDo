@@ -1,0 +1,74 @@
+.ToDoList {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0 60px;
+  text-align: center;
+}
+.ToDoList__input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  width: 230px;
+  color: white;
+}
+.ToDoList__input::placeholder {
+  color: rgb(219, 215, 215);
+}
+.ToDoList__add {
+  background-color: rgb(241, 241, 241);
+  color: rgb(23, 79, 94);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin: 0 0 0 25px;
+  padding: 4px 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.ToDoList__container {
+  border: 2px solid rgb(241, 241, 241);
+  margin: 50px auto;
+  border-radius: 5px;
+  max-height: 400px;
+  padding: 20px 30px 10px;
+  overflow-y: auto;
+  width: 450px;
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(16, 62, 75);
+  border: 2px solid white;
+}
+@media screen and (max-width: 500px) {
+  .ToDoList__container {
+    padding: 20px 10px 10px;
+    width: 300px;
+  }
+  .ToDoList__input {
+    width: 200px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ToDoList__add {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 318px) {
+  .ToDoList__container {
+    width: 250px;
+  }
+}
